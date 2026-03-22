@@ -1,6 +1,5 @@
-# TP Módulo I · IF009 · Introducción a Python y Patrones de Prompting (GitHub Classroom)
+# TP 2 · Introducción a Python y Patrones de Prompting (GitHub Classroom)
 
-**Semana**: 1–2  
 **Stack**: Python 3.13+, `pytest`, Git/GitHub Classroom (autograding)  
 **Entrega**: código en el repositorio asignado (push a `main`). Los tests se ejecutan automáticamente.
 
@@ -221,7 +220,7 @@ No hace falta link si el LLM no lo permite, pero sí el texto del prompt.
 
 ---
 
-## 7) Criterios de aprobación (mínimo 6)
+## 7) Criterios de aprobación
 
 - [ ] Todos los tests pasan (`pytest -v`)
 - [ ] Cobertura ≥ 70% (`pytest --cov=src --cov-fail-under=70`)
