@@ -184,5 +184,14 @@ Se usó tal cual. La implementación de es_palindromo utiliza el reemplazo de es
 Respondé brevemente (3-5 oraciones):
 
 - ¿Qué aprendiste sobre cómo formular buenos prompts?
+
+Aprendí que la precisión en el resultado depende directamente del patrón utilizado; no es lo mismo pedir "un código" que asignar un rol de Desarrollador Senior o pedir un Verificador Cognitivo. El uso de estos marcos mentales obligó a la IA a considerar casos borde (como listas vacías o el número 1 en primos) antes de generar una solución definitiva. Y a mi a leer
+todo y darle contexto y documentación completa.
+
 - ¿En qué casos la IA fue útil y en cuáles no?
+
+Fue extremadamente útil para desglosar lógicas abstractas como los closures en la memoización y para encontrar soluciones "pythónicas" eficientes como el slicing o las comprehensions. Sin embargo, su utilidad disminuye si no se le proporcionan los tests de pytest de antemano, ya que puede asumir comportamientos estándar que no siempre coinciden con los requerimientos específicos de la cátedra. Además me permitió hacerlo en tiempo record y ganar la experiencia de muchos días en un solo TP.
+
 - ¿Qué harías diferente la próxima vez?
+
+Para futuros trabajos prácticos, proporcionaría los archivos de test y los esqueletos de código de forma conjunta desde el primer prompt de cada módulo. Además, experimentaría más con el patrón de Reflexión para comparar arquitecturas de software antes de decidirme por una implementación, buscando no solo que el código pase el test, sino que sea lo más escalable posible. Y no pegaría la respuesta que hace tirándome un palo y haciendo quedar como un gil. Tal vez también volveria a procesar los primeros resultados para que quede más homogéneo y estandarizado. Arrancando a horario.
