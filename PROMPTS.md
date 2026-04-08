@@ -58,13 +58,30 @@ Lo usé tal cual. El código generado respetaba exactamente los nombres de las f
 **Herramienta**: Gemini 3 Flash
 
 **Prompt usado**:
-> 
+> Patrón: Interacción Invertida
+    Quiero implementar las funciones de condicionales.py. Antes de darme el código, haceme preguntas sobre:
+
+        Cómo clasificar el número 0.
+
+        Los rangos exactos de las notas y si debo agregar validación de errores.
+
+        Si prefiero lógica anidada o compacta para el año bisiesto.
+
+    Mis respuestas fueron:
+
+        El 0 cuenta como positivo.
+
+        Una nota de 6.0 ya es "Bueno" y debo avisar si la nota es inválida (fuera de 0-10).
+
+        Lógica compacta con operadores and/or.
 
 **Resultado obtenido**:
 
+El modelo generó las funciones basadas en mis definiciones específicas, aplicando una estructura de control if/elif/else para las notas y una expresión booleana de una sola línea para el año bisiesto.
 
 **¿Lo usaste tal cual o lo modificaste?**
 
+Lo usé tal cual, aunque verifiqué que el cambio de "Aprobado" por "Bueno" en la nota 6 no rompiera los tests automáticos del repo.
 
 ---
 
