@@ -50,6 +50,7 @@ El modelo actuó como tutor y entregó una explicación lógica para cada funci�
 **¿Lo usaste tal cual o lo modificaste?**
 
 Lo usé tal cual. El código generado respetaba exactamente los nombres de las funciones y los valores de retorno esperados por los tests de pytest (como los strings de saludo y los nombres de los tipos de datos).
+Luego modifiqué la función clasificar numero 0 para que pase el test.
 
 ---
 
@@ -82,21 +83,32 @@ El modelo generó las funciones basadas en mis definiciones específicas, aplica
 **¿Lo usaste tal cual o lo modificaste?**
 
 Lo usé tal cual, aunque verifiqué que el cambio de "Aprobado" por "Bueno" en la nota 6 no rompiera los tests automáticos del repo.
+Luego de esto corregí la función de nota aprobado.
 
 ---
 
 ### 3 - listas.py
 
-**Herramienta**: 
+**Herramienta**: Gemini 3 Flash
 
 **Prompt usado**:
-> 
+> Patrón: Verificador Cognitivo
+    Estoy por completar src/listas.py. Antes de darme el código, revisá la lógica de estas funciones: suma_lista, filtrar_pares, invertir_lista, eliminar_duplicados y aplanar_lista.
+
+        ¿Qué casos borde debería testear (listas vacías, elementos no numéricos)?
+
+        ¿Cuál es el error más común al intentar invertir una lista o eliminar duplicados?
+
+        Proponé 3 tests para aplanar_lista con diferentes profundidades.
+        Luego de este análisis, dame el código final para Python 3.13.
 
 **Resultado obtenido**:
 
+El modelo identificó riesgos como la mutación de listas originales y el manejo de listas vacías (que en sum() devuelven 0). Me propuso usar list comprehensions por eficiencia y el truco de dict.fromkeys para mantener el orden al eliminar duplicados.
 
 **¿Lo usaste tal cual o lo modificaste?**
 
+Lo usé tal cual. Apliqué la técnica de slicing [::-1] para invertir la lista porque es la forma más rápida en Python de crear una copia invertida sin tocar la original.
 
 ---
 
