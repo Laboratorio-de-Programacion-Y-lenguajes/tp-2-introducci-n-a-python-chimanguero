@@ -114,16 +114,18 @@ Lo usé tal cual. Apliqué la técnica de slicing [::-1] para invertir la lista 
 
 ### 4 - diccionarios.py
 
-**Herramienta**: 
+**Herramienta**: Gemini 3 Flash
 
 **Prompt usado**:
-> 
+> Actuá como un desarrollador senior de Python. Necesito completar el script diccionarios.py asegurando que pase una suite de tests de pytest. Las funciones son: contar_palabras (debe ser case-insensitive), invertir_diccionario (intercambiar claves por valores), merge_diccionarios (donde d2 debe prevalecer sobre d1 en caso de conflicto) y filtrar_por_valor (debe incluir valores mayores o iguales al mínimo). Utilizá dictionary comprehensions y el operador de desempaquetado para un código limpio y eficiente.
 
 **Resultado obtenido**:
 
+El modelo generó las cuatro funciones solicitadas. Para contar_palabras, se utilizó el método .get() para manejar claves inexistentes de forma segura. Para los filtros e inversiones, se aplicaron comprensiones de diccionarios. Para el merge, se utilizó el operador {**d1, **d2} que garantiza que los valores de d2 sobrescriban a los de d1.
 
 **¿Lo usaste tal cual o lo modificaste?**
 
+Se usó tal cual. La lógica de comparación >= en filtrar_por_valor coincide exactamente con lo requerido por el test test_filtrar_por_valor.
 
 ---
 
