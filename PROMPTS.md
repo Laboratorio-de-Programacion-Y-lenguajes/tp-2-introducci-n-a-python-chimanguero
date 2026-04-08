@@ -131,21 +131,6 @@ Se usó tal cual. La lógica de comparación >= en filtrar_por_valor coincide ex
 
 ### 5 - loops.py
 
-**Herramienta**: 
-
-**Prompt usado**:
-> 
-
-**Resultado obtenido**:
-
-
-**¿Lo usaste tal cual o lo modificaste?**
-
-
----
-
-### 6 - funciones.py
-
 **Herramienta**: Gemini 3 Flash
 
 **Prompt usado**:
@@ -161,7 +146,7 @@ Se usó tal cual. La lógica de range(1, n + 1) en contar_hasta y el manejo de l
 
 ---
 
-### 7 - operaciones.py
+### 6 - funciones.py
 
 **Herramienta**: 
 
@@ -170,9 +155,24 @@ Se usó tal cual. La lógica de range(1, n + 1) en contar_hasta y el manejo de l
 
 **Resultado obtenido**:
 
+**¿Lo usaste tal cual o lo modificaste?**
+
+---
+
+### 7 - operaciones.py
+
+**Herramienta**: Gemini 3 Flash
+
+**Prompt usado**:
+> "Actuá como un desarrollador senior de Python. Necesito completar el módulo operaciones.py siguiendo una serie de tests. La función es_palindromo debe ignorar espacios y mayúsculas. capitalizar_palabras debe poner en mayúscula la primera letra de cada palabra. contar_vocales debe ser case-insensitive. Para caesar_cipher, explicá cómo usar el operador módulo % para que las letras vuelvan al inicio del alfabeto (de 'z' a 'a') manteniendo el caso original y sin alterar símbolos o espacios."
+
+**Resultado obtenido**:
+
+Se generaron las funciones optimizadas. Se destacó que para el cifrado César, la fórmula (ord(c) - base + desplazamiento) % 26 + base es la forma más limpia de manejar el desborde de letras.
 
 **¿Lo usaste tal cual o lo modificaste?**
 
+Se usó tal cual. La implementación de es_palindromo utiliza el reemplazo de espacios y el slicing [::-1] para mayor brevedad y rendimiento.
 
 ---
 
