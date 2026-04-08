@@ -148,15 +148,18 @@ Se usó tal cual. La lógica de range(1, n + 1) en contar_hasta y el manejo de l
 
 ### 6 - funciones.py
 
-**Herramienta**: 
+**Herramienta**: Gemini 3 Flash
 
 **Prompt usado**:
-> 
+> "Actuá como un desarrollador senior experto en Programación Funcional. Necesito completar el script funciones.py para que pase una suite de pytest. Las funciones deben implementar: aplicar_funcion (un map manual), componer (retornar una función que aplique f(g(x))), memoizar (usar un closure con un diccionario para cachear resultados) y reducir (un reduce manual sin usar functools). Explicame brevemente la lógica de los closures para asegurar que los tests de estado (como el de memoizar) pasen correctamente."
 
 **Resultado obtenido**:
 
+Se propusieron implementaciones limpias. Para memoizar, se utilizó una función anidada que consulta un diccionario cache definido en el ámbito superior. Para reducir, se utilizó un bucle estándar que actualiza un acumulador partiendo del valor inicial.
+
 **¿Lo usaste tal cual o lo modificaste?**
 
+Se usó tal cual. La implementación de componer respeta estrictamente el orden solicitado en el test: f(g(x)).
 ---
 
 ### 7 - operaciones.py
