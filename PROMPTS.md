@@ -146,16 +146,18 @@ Se usó tal cual. La lógica de comparación >= en filtrar_por_valor coincide ex
 
 ### 6 - funciones.py
 
-**Herramienta**: 
+**Herramienta**: Gemini 3 Flash
 
 **Prompt usado**:
-> 
+> "Actuá como un mentor de programación. Ayudame a resolver el módulo loops.py asegurando que pase todos los tests de pytest. Aplicá el patrón de Cadena de Pensamiento: explicá paso a paso cómo abordar la lógica de es_primo (considerando el caso del 1 y el 2) y cómo generar la serie de fibonacci para que coincida con los tests (empezando en 0). Buscamos soluciones que usen range() y acumuladores de forma eficiente."
 
 **Resultado obtenido**:
 
+Se desglosó la lógica de cada función. Para suma_digitos, se recomendó tratar el número como string para iterar fácilmente. Para fibonacci, se explicó la necesidad de manejar casos base para n=1 y luego usar un bucle que sume los dos últimos elementos. Para es_primo, se estableció que cualquier número menor a 2 no es primo.
 
 **¿Lo usaste tal cual o lo modificaste?**
 
+Se usó tal cual. La lógica de range(1, n + 1) en contar_hasta y el manejo de los primeros 10 múltiplos en tabla_multiplicar se implementaron siguiendo las recomendaciones para que los límites del rango sean exactos.
 
 ---
 

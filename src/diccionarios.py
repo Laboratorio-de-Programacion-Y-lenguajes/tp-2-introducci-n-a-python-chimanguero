@@ -3,10 +3,6 @@
 # ============================================================
 
 
-# ============================================================
-# MÓDULO 4: Diccionarios
-# ============================================================
-
 def contar_palabras(texto: str) -> dict:
     """
     Retorna un diccionario con la frecuencia de cada palabra.
